@@ -12,6 +12,19 @@ img{
 p{
 	line-height: 100%;
 }
+
+.bgmPlay{
+    position: absolute;
+}
+.bgmPlay img{
+
+    position: absolute;
+}
+
+#bgmImg1{
+    z-index: 10;
+}
+
 /*index.css*/
 #fullPage-nav li, .fullPage-slidesNav li{width: 30px;height: 30px;margin: 19px;}
 #fullPage-nav span, .fullPage-slidesNav span{width: 30px;height: 30px;border: 0}

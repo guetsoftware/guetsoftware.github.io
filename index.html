@@ -23,7 +23,11 @@
     <p>基地招新群号</p>
     <img src="img/QRcode2.png" alt="">
 </div>
+<audio id="bgm" src="bgm.ogg" autoplay loop></audio>
+
 <div class="section page1">
+        <img id="bgmImg" style="margin-left: 15px;" src="img/music.png" onclick="bgmClick(this)"/>
+     
     <p class="txt right" style="margin-right: 50px;">大学生创新创业综合实践基地软件部</p>
 
         <img src="img/coding.png" style="width: 60%;float: left;"/>
@@ -105,7 +109,26 @@
 <script src="js/jquery-ui-1.10.3.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script>
+    
+    function bgmClick(obj) {
+        var audio = document.getElementById("bgm");
+        if(audio.paused){
+            audio.play();
+            obj.src = "img/music.png";
+            return;
+        }
+
+        audio.pause();
+        obj.src = "img/nomusic.png"
+    }
+
+
+
+
     $(document).ready(function() {
+
+        console.log("play_music");
+
         $(".eol-show .roll").addClass("zoomIn");
         setTimeout('$(".code_img").addClass("circle")',1000);
         setTimeout('$(".eol-show .hand").animate({bottom:"0px"},1000)',1800);
@@ -168,7 +191,13 @@
                 
             }
         });
+        //播放背景音乐
+        var audio = document.getElementById("bgm");
+        audio.play();
+
     });
+
+
 </script>
 
 <!-- 自适应高度 -->

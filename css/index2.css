@@ -30,8 +30,12 @@ p{
 #fullPage-nav span, .fullPage-slidesNav span{width: 30px;height: 30px;border: 0}
 #fullPage-nav li .active span, .fullPage-slidesNav .active span{background: #c7e0ff;transition: 0.5s all}
 #fullPage-nav li span, .fullPage-slidesNav span{background: #61a2f3;transition: 0.5s all}
+/*在 css 里直接设定背景图片宽度的百分比，这是这个方法的效果。这个方法是最好的，而且不需要任何的 JavaScript 。*/
+#img.source-image {width: 100%;position: absolute;top: 0;left: 0;}
 
-.page1{background: url(../img/slide1-bg.jpg) no-repeat center bottom #4c9bf5;}
+.page1{
+    background: #4c9bf5 url(../img/slide1-bg.jpg) no-repeat center bottom;
+}
 .center{width: 1000px;margin: 0 auto;}
 .col-50{width: 50%}
 

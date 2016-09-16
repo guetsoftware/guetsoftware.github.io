@@ -34,7 +34,8 @@ p{
 #img.source-image {width: 100%;position: absolute;top: 0;left: 0;}
 
 .page1{
-    background: #4c9bf5 url(../img/slide1-bg.jpg) no-repeat center bottom;
+    background: #4c9bf5 url(../img/slide1-bg.jpg) no-repeat center bottom fixed;
+
 }
 .center{width: 1000px;margin: 0 auto;}
 .col-50{width: 50%}
